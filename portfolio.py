@@ -30,8 +30,12 @@ if selected == 'About':
             st.title("MUSA BALTI")
             st.write(" I am a seasoned software developer with over four years of experience, transitioning my focus to frontend development. With a strong foundation in JavaScript, TypeScript, React, and Angular, I bring a wealth of expertise to crafting dynamic and user-centric interfaces. Leveraging my extensive experience, I am committed to delivering high-quality software solutions that meet and exceed user expectations")
         with  col2:
-            st.title("Education")
-            st.write("I hold a Bachelor's degree in Computer Science from FAST-NUCES, providing a solid foundation in software engineering principles and computer science fundamentals. My education at FAST-NUCES has equipped me with the necessary skills and knowledge to excel in the field of technology.")
+            subCol1, subCol2 = st.columns(2)
+            with subCol1:
+                st.title("Education")
+                st.write("I hold a Bachelor's degree in Computer Science from FAST-NUCES, providing a solid foundation in software engineering principles and computer science fundamentals. My education at FAST-NUCES has equipped me with the necessary skills and knowledge to excel in the field of technology.")
+            with subCol2:
+                st.subheader("BSCS")
         with  col3:
             st.title("Worked History")
             st.write(" I'm a Software Frontend Developer at True Meridian, where I specialize in crafting intuitive user interfaces. Working alongside a dynamic team, I contribute to innovative solutions tailored to meet client requirements and drive user engagement. My role allows me to leverage my expertise to deliver impactful software solutions.")
